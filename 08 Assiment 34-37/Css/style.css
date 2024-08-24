@@ -1,0 +1,109 @@
+/* Task 1 Start Here */
+.task-1 div {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: #EEE;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.task-1 div:empty {
+    background-color: red;
+}
+
+/* Task 1 End Here */
+/* Task  Start Here */
+.task-2 div {
+    width: 80%;
+    background-color: #DDD;
+    font-size: 36px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 35px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.task-2 div::after {
+    content: "1";
+    background-color: red;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    top: 13px;
+    left: -20px;
+    color: #FFF;
+    padding-top: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Task  End Here */
+/* Task 3 Start Here */
+.task-3 p {
+    background-color: #EEE;
+    text-align: left;
+    font-size: 25px;
+    margin: 40px 20px 40px 221px;
+    width: 67%;
+    position: relative;
+    padding: 25px;
+    border-left: solid 7px #E91E63;
+}
+
+.task-3 p::before {
+    content: attr(data-person);
+    background-color: #DDDDDD;
+    position: absolute;
+    left: -182px;
+    top: 9px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 13px 24px;
+}
+
+.task-3 p::after {
+    content: "";
+    border-color: transparent #E91E63 transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 25px;
+    left: -37px;
+}
+
+/* Task 3 End Here */
+/* Task 4 Start Here */
+.task-4 p {
+    background-color: #DDD;
+    width: 70%;
+    padding: 25px;
+    font-size: 30px;
+    font-family: arial;
+    margin: 25px 120px;
+    position: relative;
+    counter-increment: count;
+    border-right: 8px solid red;
+    text-wrap: nowrap;
+}
+
+.task-4 p::before {
+    content: counter(count);
+    width: 84px;
+    height: 66px;
+    padding-top: 18px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -85px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+/* Task 4 End Here */

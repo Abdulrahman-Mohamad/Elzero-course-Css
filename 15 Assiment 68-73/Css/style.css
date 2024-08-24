@@ -1,0 +1,234 @@
+/* Global Style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable */
+:root {
+    --lightBg: #EEE;
+    --darkBg: #DDD;
+    --orangBg: #FF5722;
+    --greenBg: #009688;
+    --ko7lyBg: #607D8B;
+    --blackBg: #000;
+    --whitBg: #FFF;
+    --blueBg: #1692FC;
+    --pinkBg: #FA3664;
+}
+
+/* Task 1 Start Here */
+.task-1 h1 {
+    width: 150px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: var(--orangBg);
+    text-align: center;
+    color: var(--whitBg);
+    position: relative;
+}
+
+.task-1 h1::before,
+.task-1 h1::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--orangBg);
+    z-index: -1;
+}
+
+.task-1 h1::before {
+    transform: skew(10deg, 10deg);
+}
+
+.task-1 h1::after {
+    transform: skew(-10deg, -10deg);
+}
+
+/* Task 1 End Here */
+/* Task 2 Start Here */
+.task-2 h1 {
+    width: fit-content;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: var(--greenBg);
+    font-weight: bold;
+    color: var(--whitBg);
+    position: relative;
+}
+
+.task-2 h1:before {
+    content: "";
+    background-color: #009688;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-10px) skew(20deg);
+}
+
+.task-2 h1::after {
+    content: "";
+    width: 15%;
+    height: 100%;
+    background-color: #009688;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translateX(-27px) skew(20deg);
+}
+
+/* Task 2 End Here */
+/* Task 3 Start Here */
+/* .class {
+    matrix(3, 0.2679, 0, 3, 20, 100);
+    } 
+    scalX(3),skewY(15deg),skewX(0),scalY(3),translateX(20),translateY(100)
+  */
+/* Task 3 End Here */
+/* Task 4 Start Here */
+.task-4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-4 div{
+    width: 200px;
+    height: 200px;
+    background-color: var(--ko7lyBg);
+    position: relative;
+    border-bottom: 5px solid var(--blackBg);
+}
+.task-4 div::before{
+    content: "Elzero";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    color: var(--whitBg);
+    font-family: arial;
+    font-weight: bold;
+}
+.task-4 div::after{
+    content: "";
+    width: 137.42px;
+    height: 137.42px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--blackBg);
+    transform: translate(-50%, -119%) rotate(45deg);
+    transform-origin: center center;
+    border-right: solid 5px var(--whitBg);
+    border-bottom: solid 5px var(--whitBg);
+    z-index: 2;
+}
+/* Task 4 End Here */
+/* Task 5 Start Here */
+.task-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.task-5 div{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    position: relative;
+    perspective: 500px;
+}
+.task-5 .one::before{
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--pinkBg);
+    font-size: 35px;
+    font-family: arial;
+    font-weight: bold;
+    color: var(--whitBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    backface-visibility: hidden;
+    
+
+}
+.task-5 .one:hover::before{
+transform: rotateY(180deg);
+}
+.task-5 .one::after{
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--blueBg);
+    font-size: 35px;
+    font-family: arial;
+    font-weight: bold;
+    color: var(--whitBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(-180deg);
+    transition: transform 1s;
+    backface-visibility: hidden;
+    z-index: -1;
+}
+.task-5 .one:hover::after{
+    transform: rotateY(0deg);
+    }
+/* ----------------------------------------------- */
+.task-5 .two::before{
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--pinkBg);
+    font-size: 35px;
+    font-family: arial;
+    font-weight: bold;
+    color: var(--whitBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    backface-visibility: hidden;
+    
+
+}
+.task-5 .two:hover::before{
+transform: rotateX(-180deg);
+}
+.task-5 .two::after{
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--blueBg);
+    font-size: 35px;
+    font-family: arial;
+    font-weight: bold;
+    color: var(--whitBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(180deg);
+    transition: transform 1s;
+    backface-visibility: hidden;
+    z-index: -1;
+}
+.task-5 .two:hover::after{
+    transform: rotateX(0deg);
+    }
+/* Task 5 End Here */

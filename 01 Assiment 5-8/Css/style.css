@@ -1,0 +1,76 @@
+/* assign 1 Start Here */
+.assign-1 div {
+    width: 500px;
+    margin: 5px auto 10px;
+    padding: 20px;
+}
+.assign-1-shape-1{
+    background-color: rgb(138, 43, 226);
+    background-color: #8a2be2;
+    background-color: hsl(271, 76%, 53%);
+}
+.assign-1-shape-2{
+    background-color: rgb(138, 43, 226, 0.5);
+}
+.assign-1-shape-3{
+    background-color: rgb(138, 43, 226, 0.1);
+    
+}
+
+/* assign 1 End Here */
+/* assign 2 Start Here */
+.assign-2 div {
+    width: 400px;
+    height: 400px;
+    margin: 10px auto;
+    background-image: url(../image/css-assignment-5-8.png);
+    background-color: #EEEEEE;
+    color: #ffffff;
+    padding: 20px;
+}
+.assign-2-shape-1 {
+    background-repeat: no-repeat;
+}
+.assign-2-shape-2 {
+    background-repeat: repeat-y;
+}
+.assign-2-shape-3 {
+    background-repeat: repeat-x;
+    
+}
+.assign-2-shape-4 {
+    background-repeat: repeat;
+}
+/* assign 2 End Here */
+/* assign 4 Start Here */
+.assin-4 div {
+width: 400px;
+height: 400px;
+color:#ffffff;
+padding: 20px;
+margin:20px auto;
+background-color: #EEEEEE;
+background-image: url(../image/css-assignment-5-8.png);
+}
+.assign-4-shape-1 {
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+.assign-4-shape-2 {
+    background-repeat: repeat-y;
+    background-position:top right;
+    background-size: 80% 80%;
+}
+.assign-4-shape-3 {
+    background-repeat: repeat-x;
+    background-position:bottom center;
+    background-size: 80% 80%;
+}
+.assign-4-shape-4 {
+    background-repeat: no-repeat;
+    background-position:bottom right;
+    background-size: 50% ;
+}
+
+
+/* assign  End Here */

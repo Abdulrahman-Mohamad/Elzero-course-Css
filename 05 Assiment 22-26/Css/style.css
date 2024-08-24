@@ -1,0 +1,45 @@
+/* Task 1 Start Here */
+.task-1 div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.task-1 p{
+    background-color: #DDD;
+    padding: inherit;
+    border: inherit;
+}
+/* Task 1 End Here */
+/* Task 2 Start Here */
+
+.task-2 .p1{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.task-2 .p2{
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+}
+.task-2 .p3{
+    font-family: "Jomhuria", serif;
+}
+
+/* Task 2 End Here */
+/* Task 3 Start Here */
+:root{
+    font-size: 20px;
+}
+
+.task-3 .pp1{
+    font-size: 2.5rem;
+}
+.task-3 .pp2{
+    font-size: 2rem;
+}
+.task-3 .pp3{
+    font-size: 1.5rem;
+}
+/* Task 3 End Here */

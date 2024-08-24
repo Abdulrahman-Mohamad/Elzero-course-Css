@@ -1,0 +1,42 @@
+/* Task-1 Start Here */
+.task-1 div {
+    display: inline-block;
+    outline: black solid 5px;
+    margin: 5px;
+    padding: 20px;
+    background-color: #EEE;
+}
+
+.shap-1 {
+    border: red solid 5px;
+}
+
+.shap-2 {
+    border: solid 5px;
+    border-color: blue green;
+}
+
+.shap-3 {
+    border: dashed 5px;
+    border-color: red green blue yellow;
+}
+/* Task-1 End Here */
+/* Task-2 Start Here */
+.element {
+    background-color: #EEE;
+    width: 401px;
+    margin: 25px auto;
+    padding: 7px;
+    outline: #EEE solid 10px;
+}
+.element-1 {
+    border-left: #E91E63 solid 5px;
+}
+.element-2 {
+    visibility: hidden;
+}
+.element-3 {
+    border-left: #009688 solid 5px;
+}
+
+/* Task-2 End Here */

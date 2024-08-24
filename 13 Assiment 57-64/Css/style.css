@@ -1,0 +1,285 @@
+/* general style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* variables */
+:root {
+    --lightBg: #EEE;
+    --darkBg: #DDD;
+    --orangBg: #FF5722;
+    --blueBg: #03A9F4;
+    --grayBg: #403F3F;
+    --pinkBg: #E91E63;
+    --greenBg: #009688;
+    --ko7lyBg: #607D8B;
+    --whiteCl: #FFF;
+    --muted: #A8A8A8;
+}
+
+/* Task 1 Start Here */
+.task-1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template: 15% auto / repeat(3, auto);
+    gap: 20px
+}
+
+.task-1 .grid div {
+    background-color: var(--ko7lyBg);
+    color: var(--whiteCl);
+    counter-increment: count;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-1 .grid div::before {
+    content: "Element " counter(count);
+    color: #FFF;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* Task 1 End Here */
+/* Task 2 Start Here */
+.task-2 .layout {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template: 10% auto 10% / 80% 20%;
+    color: var(--whiteCl);
+    margin: 50px 0px;
+}
+
+.task-2 header {
+    background-color: var(--blueBg);
+    grid-column: 1 /3;
+    padding: 20px;
+}
+
+.task-2 header::before {
+    content: "Header";
+}
+
+
+
+.task-2 section {
+    background-color: var(--orangBg);
+    padding: 20px;
+}
+
+.task-2 section::before {
+    content: "Section";
+}
+
+.task-2 aside {
+    background-color: var(--ko7lyBg);
+    padding: 20px;
+}
+
+.task-2 aside::before {
+    content: "Aside";
+}
+
+.task-2 footer {
+    background-color: var(--greenBg);
+    grid-column: 1 /3;
+    padding: 20px;
+}
+
+.task-2 footer::before {
+    content: "Footer";
+}
+
+/* Task 2 End Here */
+/* Task 3 Start Here */
+.task-3 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    color: var(--whiteCl);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 50px auto;
+
+}
+
+.task-3 .grid div {
+    background-color: var(--grayBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task 3 End Here */
+/* Task 4 Start Here */
+.task-4 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template: repeat(6, auto) / repeat(3, auto);
+    gap: 20px;
+    margin: 50px auto;
+}
+
+.task-4 .grid div {
+    background-color: var(--blueBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteCl);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.one {
+    grid-column: span 3;
+    order: 8;
+}
+
+.two {
+    grid-column: span 2;
+}
+
+.five {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.eight {
+    grid-column: span 3;
+    order: -1;
+}
+
+/* Task 4 End Here */
+/* Task 5 Start Here */
+.task-5 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display: grid;
+    grid-template: auto auto / auto auto;
+    align-content: space-between;
+    gap: 20px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.task-5 .grid div {
+    background-color: var(--pinkBg);
+    color: var(--whiteCl);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Task 5 End Here */
+/* Task 6 Start Here */
+.task-6 .layout {
+    padding: 20px 30px;
+    background-color: var(--lightBg);
+    width: 90%;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, calc(97% / 4));
+    grid-template-rows: repeat(3, calc(77% / 3)) 20%;
+    gap: 1%;
+    font-size: 16px;
+    text-wrap: wrap;
+}
+
+.task-6 .element {
+    padding: 20px 10px;
+    position: relative;
+    background-color: var(--whiteCl);
+    position: relative;
+    line-height: 1.5;
+}
+
+.nu-1 {
+    grid-column: span 2;
+}
+
+.nu-3 {
+    grid-row: span 3;
+    background-color: #000 !important;
+    color: var(--whiteCl);
+}
+
+.nu-4 {
+    grid-row: span 2;
+}
+
+.nu-5 {
+    grid-column: span 2;
+    background-color: #000 !important;
+    color: var(--whiteCl);
+}
+
+.nu-6 {
+    grid-column: span 2;
+}
+
+
+.nu-8 {
+    background-color: #000 !important;
+    color: var(--whiteCl);
+}
+
+.task-6 .element::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: red;
+}
+
+.task-6 .name {
+    font-weight: bold;
+}
+
+.task-6 .job {
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.task-6 .disc {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.task-6 .sub-disc {
+    font-weight: lighter;
+}
+
+.task-6 .element img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.25;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* Task 6 End Here */

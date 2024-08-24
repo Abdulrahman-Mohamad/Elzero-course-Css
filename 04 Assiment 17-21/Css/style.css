@@ -1,0 +1,45 @@
+
+/* task 1 Start Here */
+.task-1 h2{
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0 #E23E32, 2px 2px 0 #2C8DED;
+}
+/* task 1 End Here */
+/* task 2 Start Here */
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+    
+}
+/* task 2 End Here */
+/* task 3 Start Here */
+.task-3 div{
+    background-color: #EEE;
+    margin: 15px auto;
+    padding: 10px;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ele-3{
+    text-wrap: nowrap;
+}
+
+/* task 3 End Here */
+/* task 4 Start Here */
+.task-4{
+    margin: auto;
+}
+.task-4 a{
+text-decoration:none;
+background-color: #009688;
+padding: 13px;
+color: white;
+display: block;
+width: fit-content;
+margin: auto;
+}
+/* task 4 End Here */

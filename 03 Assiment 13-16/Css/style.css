@@ -1,0 +1,24 @@
+/* Task 1 Start here */
+.parent .child span{
+    color: red;
+}
+.parent span{
+    color: blue;
+}
+.parent p,
+.title{
+    color: green;
+}
+
+/* Task 1 End here */
+/* Task 2 Start here */
+.task-2 div{
+    background-color: #A52A2A;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+    max-height: 50px;
+    max-width: 400px;
+    overflow: hidden;
+}
+/* Task 2 End here */

@@ -1,0 +1,63 @@
+/* Task 1 Start */
+/* Any Element With Class Title */
+.title {
+}
+
+/* Any element with Id nav */
+#nav {
+}
+
+/* Any div */
+div {
+}
+
+/* any h2 */
+h2 {
+}
+/* Task 1 End */
+
+/* Task 5 Start */
+/* Valid */
+._user-name {
+}
+/* Valid */
+.-user-name {
+}
+/* Not Valid */
+.1user-name {
+}
+/* Not Valid */
+.@user-name {
+}
+/* Not Valid */
+.user@name {
+}
+/* Valid */
+._user10name {
+}
+/* Valid */
+.u {
+}
+/* Task 5 End */
+/* Task 6 Start */
+/* Bad */
+.USERNAME {
+}
+
+/* Bad */
+.UserName {
+}
+
+/* Good */
+.user-name {
+}
+
+/* Bad */
+.userName {
+}
+
+/* Bad */
+.usernameprofile {
+}
+/* Task 6 End */
+

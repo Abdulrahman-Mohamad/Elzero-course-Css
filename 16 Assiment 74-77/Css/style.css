@@ -1,0 +1,313 @@
+/* Global Style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable */
+:root {
+    --orangBg: #FCB400;
+    --blueBg: #2490FF;
+    --pinkBg: #D82455;
+    --blackBg: #000;
+    --lightBg: #EEE;
+    --darkBg: #DDD;
+    --darkGrayBg: #323234;
+}
+
+/* Task 1 Start Here */
+.task-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: var(--lightBg);
+}
+
+.task-1 div {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: var(--pinkBg) var(--pinkBg) transparent var(--pinkBg);
+    position: relative;
+    animation: rotate-1 1s infinite linear;
+}
+
+.task-1 div:hover {
+    animation-play-state: paused;
+}
+
+.task-1 div::before {
+    content: "";
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    position: absolute;
+    top: -11px;
+    left: -11px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: transparent var(--blueBg) var(--blueBg);
+}
+
+.task-1 div::after {
+    content: "";
+    width: calc(100% + 26px);
+    height: calc(100% + 26px);
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 5px solid;
+    border-color: var(--orangBg) transparent var(--orangBg) var(--orangBg);
+}
+
+@keyframes rotate-1 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Task 1 End Here */
+/* Task 2 Start Here */
+.task-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: var(--lightBg);
+}
+
+.task-2 .in {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: var(--blueBg) var(--blueBg) transparent var(--blueBg);
+    position: relative;
+    margin: 2px;
+    animation: rotate-1 1s infinite linear;
+    animation-play-state: paused;
+}
+
+.task-2 .on {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: var(--orangBg) var(--orangBg) transparent var(--orangBg);
+    position: relative;
+    margin: 2px;
+    animation: rotate-1 1.5s infinite linear;
+    animation-play-state: paused;
+}
+
+.task-2 .out {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: var(--blackBg) var(--blackBg) transparent var(--blackBg);
+    position: relative;
+    animation: rotate-1 2s infinite linear;
+    animation-play-state: paused;
+}
+
+.task-2 .out:hover .in {
+    animation: rotate-1 1s infinite linear;
+    animation-play-state: running;
+}
+
+.task-2 .out:hover .on {
+    animation: rotate-1 1.5s infinite linear;
+    animation-play-state: running;
+}
+
+.task-2 .out:hover {
+    animation: rotate-1 2s infinite linear;
+    animation-play-state: running;
+}
+
+/* Task 2 End Here */
+/* Task 3 Start Here */
+.task-3{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-3 span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--darkBg);
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: transparent var(--blackBg) var(--blackBg);
+    animation: rotate-2 1s infinite linear;
+}
+@keyframes rotate-2 {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Task 3 End Here */
+/* Task 4 Start Here */
+.task-4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-letter {
+    width: 250px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr 50px;
+    margin-right: 20px;
+}
+
+.l-letter {
+    height: 400px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 50px;
+
+}
+
+.one {
+    grid-row: span 5;
+    background-color: var(--darkGrayBg);
+}
+
+.two {
+    background-color: var(--darkGrayBg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.three,
+.four {
+    background-color: var(--darkGrayBg);
+}
+
+.dummy {
+    background-color: transparent;
+}
+
+.l-letter .qube {
+    width: 40px;
+    height: 40px;
+    background-color: var(--orangBg);
+    margin: 5px;
+    animation: L-move 3s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes L-move {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateX(-200px);
+    }
+
+    41% {
+        transform: translateX(-200px);
+    }
+
+    80% {
+        transform: translate(-200px, -350px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-200px, -350px);
+        opacity: 0;
+    }
+}
+
+.e-letter .qube {
+    width: 40px;
+    height: 40px;
+    background-color: var(--orangBg);
+    margin: 5px;
+    opacity: 0;
+    animation: E-move 5s 3s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes E-move {
+    0% {
+        opacity: 0;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    18% {
+        transform: translateX(-200px);
+    }
+
+    27% {
+        transform: translate(-200px, 175px);
+    }
+
+    36% {
+        transform: translate(0, 175px);
+    }
+
+    45% {
+        transform: translate(-200px, 175px);
+    }
+
+    54% {
+        transform: translate(-200px, 350px);
+    }
+
+    63% {
+        transform: translate(0, 350px);
+    }
+
+    72% {
+        transform: translate(-200px, 350px);
+    }
+
+    81% {
+        transform: translate(-200px, 0);
+    }
+
+    90% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Task 4 End Here */

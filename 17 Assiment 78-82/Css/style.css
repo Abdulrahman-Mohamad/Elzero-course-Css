@@ -1,0 +1,54 @@
+/* Global Style */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Variables */
+:root{
+    --lightBg:#EEE;
+    --darkBg:#DDD;
+}
+
+/* Task 1 Start Here */
+.task-1 div.main.red{
+    color: red;
+}
+/* Task 1 End Here */
+/* Task 2 Start Here */
+.task-2 .parent div:not(:first-child){
+    color: red;
+}
+/* Task 2 End Here */
+/* Task 3 Start Here */
+.task-3 .parent div:only-child.baby{
+    color: red;
+}
+/* Task 3 End Here */
+/* Task 4 Start Here */
+.task-4 > div:nth-child(n+3):nth-child(-n+5){
+    color: red;
+}
+/* Task 4 End Here */
+/* Task 5 Start Here */
+.task-5 div:nth-child(2) div:only-of-type{
+    color: red;
+}
+/* Task 5 End Here */
+/* Task 6 Start Here */
+.task-6 div:not(.no-need) div:nth-last-of-type(2) {
+    color: red;
+}
+/* Task 6 End Here */
+/* Task 7 Start Here */
+.task-7 > div:first-child div:nth-last-child(2) {
+    color:red;
+}
+/* Task 7 End Here */
+/* Task 8 End Here */
+.task-8 div:nth-child(2),
+.task-8 div:nth-child(3),
+.task-8 p:only-of-type {
+    color: red;
+}
+/* Task 8 End Here */

@@ -1,0 +1,79 @@
+:root{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Task 1 Start Here */
+.task-1 .parent {
+    background-color: #EEE;
+    width: 80%;
+    height: 500px;
+    margin: 200px auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    font-family: arial;
+    -webkit-transition: margin 0.5s;
+    -o-transition: margin 0.5s;
+    transition: margin 0.5s;
+}
+
+.task-1 .child {
+    background-color: #DDD;
+    padding: 25px;
+    font-size: 40px;
+    margin: 40px 35px;
+    -webkit-transition: margin 0.5s 0.5s;
+    -o-transition: margin 0.5s 0.5s;
+    transition: margin 0.5s 0.5s;
+}
+
+.task-1 .parent:hover {
+    margin: 100px auto;
+}
+
+.task-1 .parent:hover .child {
+    margin: 90px 35px;
+}
+
+/* Task 1 End Here */
+/* Task 2 Start Here */
+.task-2 div {
+    text-indent: -9999px;
+    line-height: 0;
+    background-color: #EEE !important;
+    border: none !important;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.task-2 div::after {
+    content: "Elzero";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+    font-size: 20px;
+    color: #000;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Task 2 End Here */
+/* Task 3 Start Here */
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+.task-3 div {
+    width: 40%;
+    margin: 20px auto;
+    color: var(--mainColor, red);
+    border: 1.5px solid;
+    border-color: var(--mainColor, black);
+    padding: var(--mainPadding, 10px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Task 3 End Here */
